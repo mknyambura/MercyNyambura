@@ -3580,6 +3580,7 @@ input, select, textarea {
 		#menu .links {
 			list-style: none;
 			padding: 0;
+			transition: all 0.3s;
 		}
 
 			#menu .links > li {
@@ -3592,6 +3593,7 @@ input, select, textarea {
 				#menu .links > li a {
 					display: block;
 					border-bottom: 0;
+
 				}
 
 					#menu .links > li a h3 {
@@ -3621,7 +3623,40 @@ input, select, textarea {
 					margin-top: 0;
 					padding-top: 0;
 				}
+		nav .links {
+			transition: all 0.3s;
+		}
+		nav .links li:hover{
+			color: #2ebaae;
+		}
 
+.dropdown-content ul li:hover .dropdown-content-1{
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 150%;
+
+}
+
+.dropdown-content ul{
+			display: block;
+			margin: 10px;
+}
+
+.dropdown-content-1{
+	display: none;
+}
+
+.dropdown-content ul li{
+	width: 150%;
+	padding: 10px;
+}
+
+.fas {
+	float: left;
+	margin-left: 10px;
+	padding-top: 3px;
+}
 		body.is-menu-visible #menu {
 			-moz-transform: translateX(0);
 			-webkit-transform: translateX(0);
